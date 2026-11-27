@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
   <!-- Google Tag Manager -->
@@ -82,7 +82,7 @@
       <li class="logo">
         <a id="logo-container" aria-label="Navigate to the beginning of the page" href="#intro"
           class="brand-logo grey-blue-text">
-          <img src="assets/img/favicon/android-icon-192x192.png" class="circle img-responsive profile-pic" alt="Profile photo placeholder">
+          <img src="assets/img/amna-naeem-profile.png" class="circle img-responsive profile-pic" alt="Amna Naeem">
         </a>
       </li>
 
@@ -141,25 +141,25 @@
         4. mdi-file-attachment
         5. mdi-file-folder-shared
         -->
-        <a aria-label="Resume placeholder" href="#" class="waves-effect waves-dark teal-text"
-          onclick="return false;"><i class="mdi-file-folder-open small"></i><span>Resume (Add later)</span></a>
+        <a aria-label="Download Amna Naeem's resume" href="assets/resume/Amna_Naeem_Resume.pdf" download
+          class="waves-effect waves-dark teal-text"><i class="mdi-file-folder-open small"></i><span>Download Resume</span></a>
       </li>
     </ul>
   </nav>
 
   <!-- Nav class 2 -->
   <nav class="hide-on-large only trigger z-depth-1">
-    <a aria-label="Toggle visibility of the mobile navbar" href="#" data-activates="slide-out"
-      class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+    <a id="mobile-menu-toggle" aria-label="Toggle navigation menu" aria-controls="slide-out" aria-expanded="false"
+      href="#" class="button-collapse"><span class="menu-icon" aria-hidden="true"></span></a>
     <div class="name-title">
-      <a id="name" aria-label="Navigate to the beginning of the page" href="#" class="teal-text">Amna Naeem</a>
+      <a id="name" aria-label="Navigate to the beginning of the page" href="#intro" class="teal-text">Amna Naeem</a>
       <span class="black-text">Cyber Security</span>
     </div>
   </nav>
 
   <!-- Nav class 3 -->
   <nav class="hide-on-large only">
-    <ul id="slide-out" class="side-nav">
+    <ul id="slide-out" class="side-nav" aria-label="Mobile navigation">
       <li class="bold">
         <a aria-label="Navigate to the About section" href="#about" class="waves-effect waves-dark teal-text"><i
             class="mdi-social-person small"></i><span>About</span></a>
@@ -187,8 +187,8 @@
             class="mdi-content-mail small"></i><span>Contact</span></a>
       </li>
       <li class="bold">
-        <a aria-label="Resume placeholder" href="#" onclick="return false;"
-          class="waves-effect waves-dark teal-text"><i class="mdi-file-folder-open small"></i><span>Resume (Add later)</span></a>
+        <a aria-label="Download Amna Naeem's resume" href="assets/resume/Amna_Naeem_Resume.pdf" download
+          class="waves-effect waves-dark teal-text"><i class="mdi-file-folder-open small"></i><span>Download Resume</span></a>
       </li>
     </ul>
   </nav>
@@ -200,24 +200,21 @@
       <div class="overlay"></div>
       <div class="container">
         <div class="col-md-9">
-          <div class="content section-padding valign" style="margin-left: 10%; margin-top: 50px;">
+          <div class="content section-padding valign hero-content">
             <div class="caption">
-              <h2>Hi, I'm <span class="teal">Amna Naeem.</span></h2>
-              <h5 style="color:#fff">A <span class="typing" style="font-weight: 300; color:#004d40"></span></h5>
-              <!-- <h5 style="color:#00796b">A <span class="typing" style="font-weight: 300; color:#fff"></span></h5> -->
-              <h5>Bachelor of Engineering in Information Security student at Military College of Signals (NUST), currently in the 3rd Semester.</h5>
+              <img src="assets/img/amna-naeem-profile.png" class="hero-profile" alt="Portrait of Amna Naeem">
+              <p class="eyebrow">Information Security Student</p>
+              <h1>Hi, I'm <span class="teal">Amna Naeem.</span></h1>
+              <h5 class="hero-role"><span class="typing"></span></h5>
+              <p class="hero-summary">Studying Information Security at the Military College of Signals, NUST, and building a strong foundation in programming, networks, and cybersecurity.</p>
             </div>
             <div class="social">
               <a href="https://www.linkedin.com/in/amna-naeem-87150a452/" target="_blank" rel="noopener noreferrer"
                 aria-label="View Amna Naeem on LinkedIn" title="LinkedIn">
-                <button class="icon-btn linkedin">
-                  <i class="fa fa-linkedin"></i>
-                </button>
+                <span class="icon-btn linkedin" aria-hidden="true">in</span>
               </a>
               <a href="https://github.com/amnanaeem1135-eng" target="_blank" aria-label="View Amna Naeem on GitHub">
-                <button class="icon-btn github">
-                  <i class="fa fa-github"></i>
-                </button>
+                <span class="icon-btn github" aria-hidden="true">GH</span>
               </a>
             </div>
             <div class='buttons'>
@@ -231,10 +228,10 @@
 
     <!-- Second Section: About -->
     <section id="about" class="section scrollspy">
-      <h3 class="page-title white-text teal">About</h3>
+      <h3 class="page-title white-text teal">About Me</h3>
       <div class="container flow-text">
         <p>
-          Third-semester Information Security student with a strong interest in cybersecurity. I am eager to build my skills and begin my career as a Cyber Security Analyst. I have basic knowledge of networking, operating systems, Java, C++, SQL, and information security concepts. I enjoy solving problems, learning new technologies, and exploring cyber threats and security tools.
+          I am an Information Security undergraduate at the Military College of Signals, NUST, where I am developing a foundation in computing and security. I am particularly interested in cybersecurity, networking, and understanding how systems can be protected. Through university coursework and personal practice, I am learning programming with Java and C++, object-oriented programming, SQL, and web fundamentals, alongside using Linux and Windows. I enjoy approaching problems step by step, exploring beginner-level security challenges, and continuing to grow my skills as I learn.
         </p>
         <!-- <p>
           Another Paragraph
@@ -247,13 +244,16 @@
           aria-label='Navigate to the article "Scalable CSS"'
           href="https://mrmrs.github.io/writing/2016/03/24/scalable-css/">Design Systems</a>
         </p> -->
+        <a class="resume-button" href="assets/resume/Amna_Naeem_Resume.pdf" download>
+          Download My Resume
+        </a>
       </div>
     </section>
 
 
     <!-- Third Section: Experience -->
     <section id="experience" class="section scrollspy">
-      <h3 class="page-title white-text teal">Experience</h3>
+      <h3 class="page-title white-text teal">Cybersecurity Learning</h3>
       <div class="container">
         <div class="card">
           <div class="card-content">
@@ -264,10 +264,10 @@
                 </p>
               </div>
             </div>
-            <div class="role brown-text text-darken-2">Beginner-Level Cybersecurity Activities</div>
+            <div class="role brown-text text-darken-2">Beginner-level practice</div>
             <ul>
-              <li>Participated in beginner-level Capture The Flag (CTF) challenges where I solved cybersecurity tasks by finding hidden flags using the provided hints.</li>
-              <li>Worked on basic web security, cryptography, Linux commands, and logical problem-solving.</li>
+              <li>Practise solving introductory cybersecurity challenges by using clues to find hidden flags.</li>
+              <li>Explore foundational topics including web security, cryptography, Linux commands, and logical problem-solving.</li>
             </ul>
           </div>
         </div>
@@ -282,13 +282,14 @@
           <div class="col s12 m6 l4">
             <div class="card medium">
               <div class="card-content">
-                <span class="card-title activator teal-text hoverline">Restaurant Management System (Java)<i class="mdi-navigation-more-vert right"></i></span>
-                <p>A Java-based restaurant management system.</p>
+                <span class="card-title activator teal-text hoverline">Restaurant Management System</span>
+                <p>A university Java project for managing menu items, customer orders, and bills.</p>
+                <div class="project-tags"><span>Java</span><span>Arrays</span><span>University Project</span></div>
               </div>
               <div class="card-reveal">
                 <span class="card-title grey-text"><small>Project Details</small><i class="mdi-navigation-close right"></i></span>
                 <ul>
-                  <li><b>Tools:</b> Java, Arrays</li>
+                  <li><b>Tools:</b> Java, arrays</li>
                   <li>Allows users to add and remove food items and store their names and prices.</li>
                   <li>Displays the menu and calculates the total bill.</li>
                   <li>Assigns a unique order ID and keeps a record of previous bills.</li>
@@ -308,18 +309,13 @@
       <div class="container">
         <div class="card">
           <div class="card-content">
-            <h4 class="brown-text light">Skills - Beginner Level</h4>
-            <div class="row text-center">
-              <div class="col s6 m4 l3"><p>Object-Oriented Programming<br><small class="brown-text">Beginner</small></p></div>
-              <div class="col s6 m4 l3"><p>Java<br><small class="brown-text">Beginner</small></p></div>
-              <div class="col s6 m4 l3"><p>C++<br><small class="brown-text">Beginner</small></p></div>
-              <div class="col s6 m4 l3"><p>SQL<br><small class="brown-text">Beginner</small></p></div>
-              <div class="col s6 m4 l3"><p>Networking<br><small class="brown-text">Beginner</small></p></div>
-              <div class="col s6 m4 l3"><p>Information Security<br><small class="brown-text">Beginner</small></p></div>
-              <div class="col s6 m4 l3"><p>HTML<br><small class="brown-text">Beginner</small></p></div>
-              <div class="col s6 m4 l3"><p>Linux<br><small class="brown-text">Beginner</small></p></div>
-              <div class="col s6 m4 l3"><p>Windows<br><small class="brown-text">Beginner</small></p></div>
-              <div class="col s6 m4 l3"><p>Microsoft PowerPoint<br><small class="brown-text">Beginner</small></p></div>
+            <h4 class="brown-text light">Foundational skills</h4>
+            <p class="skills-intro">Skills I am developing through coursework and hands-on practice.</p>
+            <div class="skills-grid">
+              <span>C++</span><span>Java</span><span>Object-Oriented Programming</span>
+              <span>SQL</span><span>Networking</span><span>Information Security</span>
+              <span>HTML</span><span>Linux</span><span>Windows</span>
+              <span>Microsoft PowerPoint</span>
             </div>
           </div>
         </div>
@@ -368,18 +364,18 @@
       <div class="container">
         <p>
           <a aria-label="Email Amna" href="mailto:amna.naeem1135@gmail.com" target="_blank" data-position="top"
-            data-tooltip="Email Amna" class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i class="fa fa-envelope"></i></a>
+            data-tooltip="Email Amna" class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped">@</a>
           <a aria-label="Email Amna" href="mailto:amna.naeem1135@gmail.com" class="hoverline">amna.naeem1135@gmail.com</a>
         </p>
         <p>
           <a aria-label="View Amna on GitHub" href="https://github.com/amnanaeem1135-eng" target="_blank" data-position="top"
-            data-tooltip="View Amna on GitHub" class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i class="fa fa-github"></i></a>
+            data-tooltip="View Amna on GitHub" class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped">GH</a>
           <a aria-label="Amna on GitHub" href="https://github.com/amnanaeem1135-eng" class="hoverline" target="_blank">github.com/amnanaeem1135-eng</a>
         </p>
         <p>
           <a aria-label="View Amna on LinkedIn" href="https://www.linkedin.com/in/amna-naeem-87150a452/" target="_blank"
             rel="noopener noreferrer" data-position="top" data-tooltip="View Amna on LinkedIn"
-            class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i class="fa fa-linkedin"></i></a>
+            class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped">in</a>
           <a aria-label="Amna on LinkedIn" href="https://www.linkedin.com/in/amna-naeem-87150a452/" class="hoverline"
             target="_blank" rel="noopener noreferrer">linkedin.com/in/amna-naeem-87150a452</a>
         </p>
@@ -387,6 +383,26 @@
     </section>
 
   </main>
+
+  <script>
+    (function () {
+      var toggle = document.getElementById("mobile-menu-toggle");
+      var menu = document.getElementById("slide-out");
+
+      toggle.addEventListener("click", function (event) {
+        event.preventDefault();
+        var isOpen = menu.classList.toggle("is-open");
+        toggle.setAttribute("aria-expanded", String(isOpen));
+      });
+
+      menu.addEventListener("click", function (event) {
+        if (event.target.closest("a")) {
+          menu.classList.remove("is-open");
+          toggle.setAttribute("aria-expanded", "false");
+        }
+      });
+    })();
+  </script>
 
   <!-- typed.js -->
   <script src="assets/vendor/typed.js/typed.min.js"></script>
@@ -406,16 +422,9 @@
   <!-- Materialize - Compiled and minified JavaScript-->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.95.3/js/materialize.min.js"></script>
   <script>
-    // Materialize - Initializers
-    $(document).ready(function () {
-      $(".scrollspy").scrollSpy()
-      // Initialize collapse button
-      $(".button-collapse").sideNav({
-        menuWidth: 190, // Default is 240
-        edge: "left", // Choose the horizontal origin
-        closeOnClick: true // Closes side-nav on <a> clicks, useful for Angular/Meteor
-      })
-    })
+    if (window.jQuery && window.jQuery.fn.scrollSpy) {
+      window.jQuery(".scrollspy").scrollSpy();
+    }
   </script>
 </body>
 
